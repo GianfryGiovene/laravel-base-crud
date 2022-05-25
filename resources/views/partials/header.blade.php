@@ -18,7 +18,4 @@
             </nav>
         </div>
     </div>
-    <div id="jumbo-tron">
-        <img src="{{ asset('images/jumbotron.jpg') }}" alt="">
-    </div>
 </header>

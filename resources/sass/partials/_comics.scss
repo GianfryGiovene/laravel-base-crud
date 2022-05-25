@@ -1,0 +1,43 @@
+main{
+    section#comics{
+        color: #fff;
+        background-color: #1c1c1c;
+        .container{
+            max-width: 1200px;
+            margin: auto;
+            #comics-container{
+                padding: 50px 0 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                .card{
+                    width: calc(100% / 7);
+                    height: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        .thumb{
+                            overflow-y: hidden;
+                            height: 180px;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .info{
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        h3{
+                            padding: 10px 0;
+                            top: -20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

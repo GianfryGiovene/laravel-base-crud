@@ -13,13 +13,17 @@ Bonus: creare il seeder per la tabella comics utilizzando il file in allegato. -
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Laravel base crud</title>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <title>Laravel-DC-Comics - @yield('title')</title>
 </head>
 
 <body>
     @include('partials.header')
-    @yield('comics-content')
-    @yield('comic-content')
+    <main>
+        @yield('comics-content')
+        @yield('comic-content')
+    </main>
+
     @include('partials.footer')
 </body>
 

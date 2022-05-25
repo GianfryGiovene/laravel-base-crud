@@ -2,19 +2,22 @@
 @section('title', 'comic')
 
 @section('comic-content')
-    <section id="comic">
-        <h2>{{ $comic['title'] }}</h2>
-        <div class="general">
-            <img src="{{ $comic['thumb'] }}" alt="">
-            <div>
-                <span>{{ $comic['series'] }}</span>
-                <span>{{ $comic['type'] }}</span>
-                <span>{{ $comic['price'] }}</span>
-                <span>{{ $comic['sale_date'] }}</span>
+    <section id="comic-detail">
+        <div class="container">
+            <h2>{{ $comic['title'] }}</h2>
+            <div class="general">
+                <img src="{{ $comic['thumb'] }}" alt="">
+                <div class="info">
+                    <span>Serie: {{ $comic['series'] }}</span>
+                    <span>Tipo fumetto: {{ $comic['type'] }}</span>
+                    <span>Prezzo: {{ $comic['price'] }}</span>
+                    <span>Data uscita: {{ $comic['sale_date'] }}</span>
+                </div>
             </div>
-        </div>
-        <p>{{ $comic['description'] }}</p>
+            <h4>Trama:</h4>
+            <p>{{ $comic['description'] }}</p>
 
-        <a href="/comics">torna indietro</a>
+            <a href="/comics">torna indietro</a>
+        </div>
     </section>
 @endsection

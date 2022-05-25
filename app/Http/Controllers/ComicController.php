@@ -15,10 +15,8 @@ class ComicController extends Controller
     {
         //
         $navBar = config('headerNav');
-        $footerList = config('footerList');
-        $followUs = config('footerFollowUs');
         $comics = Comic::all();
-        return view('main.index',compact('comics'),compact('navBar'),compact('footerList'),compact('followUs'));
+        return view('main.index',compact('comics'),compact('navBar'));
     }
 
     /**
@@ -51,10 +49,8 @@ class ComicController extends Controller
     public function show(Comic $comic)
     {
         //
-        $footerList = config('footerList');
-        $followUs = config('footerFollowUs');
         $navBar = config('headerNav');
-        return view('main.show',compact('comic'),compact('navBar'),compact('footerList'),compact('followUs'));
+        return view('main.show',compact('comic'),compact('navBar'));
     }
 
     /**
