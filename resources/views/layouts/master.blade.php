@@ -13,11 +13,12 @@ Bonus: creare il seeder per la tabella comics utilizzando il file in allegato. -
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Laravel base crud</title>
 </head>
 
 <body>
-
+    @include('partials.header')
+    @include('partials.footer')
 </body>
 
 </html>
