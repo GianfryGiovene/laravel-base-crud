@@ -18,6 +18,7 @@ Bonus: creare il seeder per la tabella comics utilizzando il file in allegato. -
 
 <body>
     @include('partials.header')
+    @yield('comics-content')
     @include('partials.footer')
 </body>
 
