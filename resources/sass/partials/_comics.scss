@@ -2,6 +2,7 @@ main{
     section#comics{
         color: #fff;
         background-color: #1c1c1c;
+        padding: 20px 0;
         .container{
             max-width: 1200px;
             margin: auto;
@@ -37,6 +38,13 @@ main{
                         }
                     }
                 }
+            }
+            & > a{
+                padding: 5px 10px;
+                margin-bottom: 20px;
+                background-color: white;
+                text-decoration: none;
+                border: 2px solid #0082f9;
             }
         }
     }

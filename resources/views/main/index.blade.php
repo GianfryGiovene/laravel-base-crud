@@ -22,6 +22,7 @@
                     <p>Non ci sono fumetti da visualizzare</p>
                 @endforelse
             </div>
+            <a href="/">Back</a>
         </div>
     </section>
 @endsection
