@@ -7,9 +7,11 @@
     </div>
     <div>
         <div class="container bottom">
-            <img src="{{ asset('images/dc-logo.png') }}" alt="">
+            {{-- Img Logo --}}
+            <img src="{{ asset('images/dc-logo.png') }}" alt="dc-logo">
             <nav>
                 <ul>
+                    {{-- navBar loop --}}
                     @foreach ($navBar as $item)
                         <li><a href="{{ $item['url'] }}">{{ $item['text'] }}</a></li>
                     @endforeach

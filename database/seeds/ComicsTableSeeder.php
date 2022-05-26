@@ -11,7 +11,8 @@ class ComicsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        // table cards seeder
+
         $comics = config('comics');
 
         foreach($comics as $comic){

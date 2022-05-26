@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title', 'comic')
-
+{{-- COMIC DETAIL SECTION --}}
 @section('comic-content')
     <section id="comic-detail">
         <div class="container">

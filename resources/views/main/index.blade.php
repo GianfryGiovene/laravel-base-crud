@@ -2,9 +2,11 @@
 @section('title', 'comics')
 
 @section('comics-content')
+    {{-- COMIC CARDS SECTION --}}
     <section id="comics">
         <div class="container">
             <div id="comics-container">
+                {{-- cards cycle --}}
                 @forelse ($comics as $comic)
                     <div class="card">
                         <a href="{{ route('comics.show', $comic->id) }}">

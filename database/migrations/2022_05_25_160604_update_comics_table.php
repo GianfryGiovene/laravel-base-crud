@@ -5,6 +5,8 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
 class UpdateComicsTable extends Migration
+
+// ------update format data in cards table--------
 {
     /**
      * Run the migrations.

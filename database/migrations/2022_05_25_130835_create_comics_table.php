@@ -5,6 +5,8 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
 class CreateComicsTable extends Migration
+
+// -----------cards table migration----------------
 {
     /**
      * Run the migrations.

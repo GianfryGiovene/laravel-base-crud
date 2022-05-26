@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use App\Comic;
 class ComicController extends Controller
 {
+    // ---------main section controller-------------
+
+
     /**
      * Display a listing of the resource.
      *

@@ -4,13 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+// main page controller
 class MasterController extends Controller
 {
     //
     function index(){
+        // nav bar json
         $navBar = config('headerNav');
-        $footerList = config('footerList');
-        $footerLink = config('footerFollowUs');
-        return view('layouts.master',compact('navBar'),compact('footerList'),compact('footerLink'));
+        return view('layouts.master',compact('navBar'));
     }
 }
