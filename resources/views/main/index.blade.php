@@ -15,16 +15,19 @@
                             </div>
                             <h3>{{ $comic['title'] }}</h3>
                             <div class="info">
-                                <span>tipo: {{ $comic['type'] }}</span>
-                                <span>prezzo: {{ $comic['price'] }}€</span>
+                                <span>type: {{ $comic['type'] }}</span>
+                                <span>price: {{ $comic['price'] }}€</span>
                             </div>
                         </a>
                     </div>
                 @empty
-                    <p>Non ci sono fumetti da visualizzare</p>
+                    <p>There aren't comics to show</p>
                 @endforelse
             </div>
             <a href="/">Back</a>
+            <div id="add-comics">
+                <a href="comics/create">Add Comic</a>
+            </div>
         </div>
     </section>
 @endsection

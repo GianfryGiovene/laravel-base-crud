@@ -30,6 +30,8 @@ class ComicController extends Controller
     public function create()
     {
         //
+        $navBar = config('headerNav');
+        return view('main.create',compact('navBar'));
     }
 
     /**
@@ -41,6 +43,14 @@ class ComicController extends Controller
     public function store(Request $request)
     {
         //
+        $comics = $request->all();
+
+        $newComic = new Comic;
+        $newComic->fill($comics);
+        $newComic->save();
+
+
+        return redirect()->route('comics.show', $newComic->id);
     }
 
     /**

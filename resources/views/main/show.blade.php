@@ -8,16 +8,16 @@
             <div class="general">
                 <img src="{{ $comic['thumb'] }}" alt="">
                 <div class="info">
-                    <span>Serie: {{ $comic['series'] }}</span>
-                    <span>Tipo fumetto: {{ $comic['type'] }}</span>
-                    <span>Prezzo: {{ $comic['price'] }}</span>
-                    <span>Data uscita: {{ $comic['sale_date'] }}</span>
+                    <span>Series: {{ $comic['series'] }}</span>
+                    <span>Type: {{ $comic['type'] }}</span>
+                    <span>Price: {{ $comic['price'] }}</span>
+                    <span>Sale date: {{ $comic['sale_date'] }}</span>
                 </div>
             </div>
-            <h4>Trama:</h4>
+            <h4>Description:</h4>
             <p>{{ $comic['description'] }}</p>
 
-            <a href="/comics">torna indietro</a>
+            <a href="/comics">Back</a>
         </div>
     </section>
 @endsection

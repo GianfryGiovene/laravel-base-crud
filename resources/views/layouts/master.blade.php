@@ -3,7 +3,14 @@ e tramite gli appositi comandi artisan
 create un model con relativa migration
 e un resource controller.
 Iniziate a definire le operazioni CRUD per gestire un archivio di fumetti.
-Bonus: creare il seeder per la tabella comics utilizzando il file in allegato. --}}
+Bonus: creare il seeder per la tabella comics utilizzando il file in allegato.
+
+parte 2
+
+completate le operazioni CRUD.
+Bonus: tramite javascript,
+quando l'utente clicca sul pulsante "delete",
+chiedere conferma della cancellazione, prima di eliminare l'elemento. --}}
 
 
 <!DOCTYPE html>
@@ -22,6 +29,7 @@ Bonus: creare il seeder per la tabella comics utilizzando il file in allegato. -
     <main>
         @yield('comics-content')
         @yield('comic-content')
+        @yield('add-comic')
     </main>
 
     @include('partials.footer')
