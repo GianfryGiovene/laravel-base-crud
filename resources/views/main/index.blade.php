@@ -24,8 +24,8 @@
                     <p>There aren't comics to show</p>
                 @endforelse
             </div>
-            <a href="/">Back</a>
-            <div id="add-comics">
+            <div id="button">
+                <a href="/">Back</a>
                 <a href="comics/create">Add Comic</a>
             </div>
         </div>

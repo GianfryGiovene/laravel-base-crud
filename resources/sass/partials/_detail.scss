@@ -20,12 +20,25 @@
         p{
             margin-bottom: 20px;
         }
-        a{
-            color: #fff;
-            padding: 2px 5px;
-            background-color: #1c1c1c;
-            text-decoration: none;
-            border: 2px solid #0082f9;
+        .actions{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            a{
+                color: #fff;
+                padding: 2px 5px;
+                background-color: #1c1c1c;
+                text-decoration: none;
+                border: 2px solid #0082f9;
+            }
+            input{
+                font-weight: bold;
+                color: #fff;
+                padding: 3px 5px;
+                background-color: #1c1c1c;
+                text-decoration: none;
+                border: 2px solid #f00;
+            }
         }
     }
 }

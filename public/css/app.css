@@ -92,7 +92,12 @@ main section#comics .container #comics-container .card a h3 {
   top: -20px;
 }
 
-main section#comics .container > a {
+main section#comics .container #button {
+  display: flex;
+  gap: 20px;
+}
+
+main section#comics .container #button a {
   padding: 5px 10px;
   margin-bottom: 20px;
   background-color: white;
@@ -134,11 +139,26 @@ footer {
   margin-bottom: 20px;
 }
 
-#comic-detail .container a {
+#comic-detail .container .actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#comic-detail .container .actions a {
   color: #fff;
   padding: 2px 5px;
   background-color: #1c1c1c;
   text-decoration: none;
   border: 2px solid #0082f9;
+}
+
+#comic-detail .container .actions input {
+  font-weight: bold;
+  color: #fff;
+  padding: 3px 5px;
+  background-color: #1c1c1c;
+  text-decoration: none;
+  border: 2px solid #f00;
 }
 
