@@ -17,7 +17,10 @@
             <h4>Description:</h4>
             <p>{{ $comic['description'] }}</p>
 
-            <a href="/comics">Back</a>
+            <div class="links">
+                <a href="/comics">Back</a>
+                <a href="{{ route('comics.edit', $comic->id) }}">Edit</a>
+            </div>
         </div>
     </section>
 @endsection

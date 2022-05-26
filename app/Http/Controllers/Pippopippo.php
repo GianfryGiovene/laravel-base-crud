@@ -3,12 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Comic;
-class ComicController extends Controller
+
+class Pippopippo extends Controller
 {
-    // ---------main section controller-------------
-
-
     /**
      * Display a listing of the resource.
      *
@@ -17,9 +14,6 @@ class ComicController extends Controller
     public function index()
     {
         //
-        $navBar = config('headerNav');
-        $comics = Comic::all();
-        return view('main.index',compact('comics'),compact('navBar'));
     }
 
     /**
@@ -30,8 +24,6 @@ class ComicController extends Controller
     public function create()
     {
         //
-        $navBar = config('headerNav');
-        return view('main.create',compact('navBar'));
     }
 
     /**
@@ -43,14 +35,6 @@ class ComicController extends Controller
     public function store(Request $request)
     {
         //
-        $comics = $request->all();
-
-        $newComic = new Comic;
-        $newComic->fill($comics);
-        $newComic->save();
-
-
-        return redirect()->route('comics.show', $newComic->id);
     }
 
     /**
@@ -59,11 +43,9 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Comic $comic)
+    public function show($id)
     {
         //
-        $navBar = config('headerNav');
-        return view('main.show',compact('comic'),compact('navBar'));
     }
 
     /**
@@ -72,11 +54,9 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Comic $comic)
+    public function edit($id)
     {
         //
-        $navBar = config('headerNav');
-        return view('main.edit',compact('comic'),compact('navBar'));
     }
 
     /**
@@ -86,14 +66,9 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Comic $comic)
+    public function update(Request $request, $id)
     {
         //
-        $comics = $request->all();
-        $comic->update($comics);
-
-        return redirect()->route('comics.show', $comic->id);
-
     }
 
     /**
