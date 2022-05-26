@@ -17,9 +17,14 @@
             <h4>Description:</h4>
             <p>{{ $comic['description'] }}</p>
 
-            <div class="links">
+            <div class="actions">
                 <a href="/comics">Back</a>
                 <a href="{{ route('comics.edit', $comic->id) }}">Edit</a>
+                <form action="{{ route('comics.destroy', $comic->id) }}" method="post">
+                    @csrf
+                    @method('DELETE')
+                    <input type="submit" value="Delete">
+                </form>
             </div>
         </div>
     </section>
