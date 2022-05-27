@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('title', 'add comic')
 {{-- COMIC DETAIL SECTION --}}
-@section('add-comic')
+@section('comics-content')
     <form action="{{ route('comics.store') }}" method="post">
         @csrf
         <div>

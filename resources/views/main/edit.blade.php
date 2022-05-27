@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('title', 'edit comic')
 {{-- COMIC DETAIL SECTION --}}
-@section('edit-comic')
+@section('comics-content')
     <form action="{{ route('comics.update', $comic->id) }}" method="post">
         @csrf
         @method('put')

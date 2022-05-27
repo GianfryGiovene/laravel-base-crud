@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('title', 'comic')
 {{-- COMIC DETAIL SECTION --}}
-@section('comic-content')
+@section('comics-content')
     <section id="comic-detail">
         <div class="container">
             <h2>{{ $comic['title'] }}</h2>
