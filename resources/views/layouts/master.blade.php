@@ -29,9 +29,6 @@ chiedere conferma della cancellazione, prima di eliminare l'elemento. --}}
     @include('partials.header')
     <main>
         @yield('comics-content')
-        {{-- @yield('comic-content')
-        @yield('add-comic')
-        @yield('edit-comic') --}}
     </main>
 
     @include('partials.footer')

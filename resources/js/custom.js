@@ -10,6 +10,4 @@ deleteBtn.addEventListener('click',function(e){
     }else{
         e.preventDefault()
     }
-
-
 })
